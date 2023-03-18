@@ -1,0 +1,12 @@
+{
+  "title": "Goombas",
+  "type": "spritesheet",
+  "patterns": [
+    "goomba-01.json",
+    "goomba-02.json",
+    "goomba-squished.json",
+    "goomba-red-01.json",
+    "goomba-red-02.json",
+    "goomba-red-squished.json"
+  ]
+}

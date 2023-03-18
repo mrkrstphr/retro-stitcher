@@ -1,0 +1,18 @@
+{
+  "title": "Systems",
+  "type": "category",
+  "items": [
+    {
+      "title": "Gameboy",
+      "file": "gb/index.json"
+    },
+    {
+      "title": "Nintendo Entertainment System (NES)",
+      "file": "nes/index.json"
+    },
+    {
+      "title": "Sega Genesis/Master System",
+      "file": "sega/index.json"
+    }
+  ]
+}

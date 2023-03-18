@@ -1,0 +1,20 @@
+{
+  "title": "Koopa Troopas",
+  "type": "spritesheet",
+  "patterns": [
+    "koopa-shell-green.json",
+    "koopa-shell-move-green-01.json",
+    "koopa-shell-move-green-02.json",
+    "koopa-shell-move-green-03.json",
+    "koopa-shell-move-red-01.json",
+    "koopa-shell-move-red-02.json",
+    "koopa-shell-move-red-03.json",
+    "koopa-shell-red.json",
+    "koopa-shell-with-feet-green.json",
+    "koopa-shell-with-feet-red.json",
+    "koopa-troopa-green-01.json",
+    "koopa-troopa-green-02.json",
+    "koopa-troopa-red-01.json",
+    "koopa-troopa-red-02.json"
+  ]
+}

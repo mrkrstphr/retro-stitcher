@@ -1,0 +1,5 @@
+{
+  "title": "Sega Genesis/Megadrive",
+  "type": "category",
+  "items": [{ "title": "Sonic the Hedgehog", "file": "sonic-the-hedgehog/index.json" }]
+}

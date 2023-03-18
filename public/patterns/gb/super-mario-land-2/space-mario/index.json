@@ -1,0 +1,18 @@
+{
+  "title": "Space Mario",
+  "type": "spritesheet",
+  "patterns": [
+    "space-mario-01.json",
+    "space-mario-02.json",
+    "space-mario-03.json",
+    "space-mario-04.json",
+    "space-mario-05.json",
+    "space-mario-06.json",
+    "space-mario-07.json",
+    "space-mario-08.json",
+    "space-mario-09.json",
+    "space-mario-10.json",
+    "space-mario-11.json",
+    "space-mario-12.json"
+  ]
+}

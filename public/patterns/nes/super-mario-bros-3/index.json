@@ -1,0 +1,10 @@
+{
+  "title": "Super Mario Bros. 3",
+  "type": "category",
+  "items": [
+    { "title": "Frog Mario/Luigi", "file": "frog-mario/index.json" },
+    { "title": "Goombas", "file": "goombas/index.json" },
+    { "title": "Koopa Troopas", "file": "koopa-troopas/index.json" },
+    { "title": "Racoon Mario", "file": "racoon-mario/index.json" }
+  ]
+}

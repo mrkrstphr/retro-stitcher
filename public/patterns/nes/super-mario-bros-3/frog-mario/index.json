@@ -1,0 +1,23 @@
+{
+  "title": "Frog Mario/Luigi",
+  "type": "spritesheet",
+  "patterns": [
+    "frog-mario-1.json",
+    "frog-mario-2.json",
+    "frog-mario-3.json",
+    "frog-mario-4.json",
+    "frog-mario-5.json",
+    "frog-mario-6.json",
+    "frog-mario-7.json",
+    "frog-mario-8.json",
+    "frog-mario-9.json",
+    "frog-mario-10.json",
+    "frog-mario-11.json",
+    "frog-mario-12.json",
+    "frog-mario-13.json",
+    "frog-mario-14.json",
+    "frog-mario-15.json",
+    "frog-mario-16.json",
+    "frog-mario-17.json"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Sonic the Hedgehog",
+  "type": "category",
+  "items": [{ "title": "Sonic Idle", "file": "sonic-idle/index.json" }]
+}

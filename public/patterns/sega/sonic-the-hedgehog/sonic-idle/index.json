@@ -1,0 +1,6 @@
+{
+  "title": "Sonic Idle",
+  "type": "spritesheet",
+  "maxPerRow": 2,
+  "patterns": ["sonic-idle-01.json", "sonic-idle-02.json", "sonic-idle-03.json"]
+}

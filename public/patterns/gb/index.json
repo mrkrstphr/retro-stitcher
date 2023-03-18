@@ -1,0 +1,7 @@
+{
+  "title": "Gameboy",
+  "type": "category",
+  "items": [
+    { "title": "Super Mario Land 2: 6 Golden Coins", "file": "super-mario-land-2/index.json" }
+  ]
+}
