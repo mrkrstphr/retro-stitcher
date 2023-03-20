@@ -24,13 +24,10 @@ function Index() {
 
   switch (patterns.type) {
     case 'category':
-      console.log('category page');
       return <CategoryPage details={patterns} />;
     case 'spritesheet':
-      console.log('spritesheet page');
       return <SpriteSheet details={patterns} />;
     default:
-      console.log('pattern page');
       return <PatternPage file={patternFile} />;
   }
 }

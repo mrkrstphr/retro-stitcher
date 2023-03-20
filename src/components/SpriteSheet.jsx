@@ -7,16 +7,16 @@ export default function SpriteSheet({ details }) {
 
   const maxPerRow = details.maxPerRow ?? 3;
 
+  const classes =
+    maxPerRow === 2
+      ? 'grid grid-cols-1 lg:grid-cols-2 gap-4'
+      : 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4';
+
   return (
     <div>
       <h2 className="text-2xl">{details.title}</h2>
 
-      <div
-        className={`grid print:block grid-cols-${Math.max(
-          1,
-          maxPerRow - 2,
-        )} lg:grid-cols-${Math.max(1, maxPerRow - 1)} xl:grid-cols-${maxPerRow} gap-4`}
-      >
+      <div className={classes}>
         {details.patterns.map((pattern, index) => (
           <PatternLoader
             className={`mr-2 mt-2 h-full`}

@@ -17,7 +17,10 @@ export default function Pattern({ className, pattern, style }) {
       <div className="flex flex-1 flex-col mb-8 w-max">
         <div className="flex">
           {pattern.pattern[0].map((_, c) => (
-            <div className="w-4 h-4 text-2xs align-center flex justify-end">
+            <div
+              key={`header-row-col-${c}`}
+              className="w-4 h-4 text-2xs align-center flex justify-end"
+            >
               {(c + 1) % 10 === 0 ? c + 1 : ''}
             </div>
           ))}
