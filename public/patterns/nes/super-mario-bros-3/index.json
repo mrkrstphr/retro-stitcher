@@ -7,8 +7,8 @@
     { "title": "Koopa Troopas", "file": "koopa-troopas/index.json" },
     { "title": "Luigi, Small", "file": "luigi-small/index.json" },
     { "title": "Luigi, Super", "file": "luigi-super/index.json" },
+    { "title": "Mario, Racoon", "file": "mario-racoon/index.json" },
     { "title": "Mario, Small", "file": "mario-small/index.json" },
-    { "title": "Mario, Super", "file": "mario-super/index.json" },
-    { "title": "Racoon Mario", "file": "racoon-mario/index.json" }
+    { "title": "Mario, Super", "file": "mario-super/index.json" }
   ]
 }
