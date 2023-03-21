@@ -1,0 +1,21 @@
+{
+  "title": "Mario, Small",
+  "type": "spritesheet",
+  "patterns": [
+    "mario-small-01.json",
+    "mario-small-02.json",
+    "mario-small-03.json",
+    "mario-small-04.json",
+    "mario-small-05.json",
+    "mario-small-06.json",
+    "mario-small-07.json",
+    "mario-small-08.json",
+    "mario-small-09.json",
+    "mario-small-10.json",
+    "mario-small-11.json",
+    "mario-small-12.json",
+    "mario-small-13.json",
+    "mario-small-14.json",
+    "mario-small-15.json"
+  ]
+}
