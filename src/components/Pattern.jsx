@@ -19,22 +19,33 @@ export default function Pattern({ className, pattern, style }) {
           {pattern.pattern[0].map((_, c) => (
             <div
               key={`header-row-col-${c}`}
-              className="w-4 h-4 text-2xs align-center flex justify-end"
+              className={`w-4 h-4 text-2xs items-center flex justify-center ${
+                c > 1 && (c - 1) % 10 === 0
+                  ? 'border-slate-400 dark:border-slate-600 border-l-2'
+                  : ''
+              }`}
             >
-              {(c + 1) % 10 === 0 ? c + 1 : ''}
+              {/* the first column is our axis label, so no need to c - 1 */}
+              {c > 0 && c % 10 === 0 ? c : ''}
             </div>
           ))}
         </div>
 
         {pattern.pattern.map((row, r) => (
           <div className="flex" key={`row-${r}`}>
-            <div className="w-4 h-4 text-2xs align-center flex justify-center border-gray-40 dark:border-gray-600">
+            <div
+              className={`w-4 h-4 text-2xs items-center flex justify-center ${
+                r > 1 && (r + 1) % 10 === 0
+                  ? 'border-slate-400 dark:border-slate-600 border-b-2'
+                  : ''
+              }`}
+            >
               {(r + 1) % 10 === 0 ? r + 1 : ''}
             </div>
             {row.map((col, c) => (
               <div
                 className={clsx(
-                  'w-4 h-4 text-2xs align-center flex justify-center border-gray-400 dark:border-gray-600',
+                  'w-4 h-4 text-2xs items-center flex justify-center border-slate-400 dark:border-slate-600',
                   c > 0 && 'border-l',
                   c > 0 && c % 10 === 0 && 'border-l-2',
                   r < pattern.pattern.length - 1 && 'border-b',
@@ -60,18 +71,18 @@ export default function Pattern({ className, pattern, style }) {
         ))}
       </div>
 
-      <table className="mb-8 divide-y divide-gray-200 divide-y-2">
+      <table className="mb-8 divide-slate-400 dark:divide-slate-600 divide-y-2">
         <thead>
-          <tr className="divide-x divide-gray-200">
+          <tr className="divide-x divide-slate-400 dark:divide-slate-600">
             <th className="text-left px-2">Symbol</th>
             <th className="text-left px-2">ID</th>
             <th className="text-left px-2">Name*</th>
             <th className="text-right px-2"># stitches</th>
           </tr>
         </thead>
-        <tbody className="divide-y divide-gray-200">
+        <tbody className="divide-y divide-slate-400 dark:divide-slate-600">
           {Object.entries(pattern.colorMap).map(([symbol, id]) => (
-            <tr key={`key-dmc-${id}`} className="divide-x divide-gray-200">
+            <tr key={`key-dmc-${id}`} className="divide-x divide-slate-400 dark:divide-slate-600">
               <td className="px-2">
                 <div className="flex items-center justify-center">
                   <div
