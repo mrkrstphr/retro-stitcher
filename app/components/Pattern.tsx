@@ -1,19 +1,28 @@
-import clsx from 'clsx';
 import { useContext } from 'react';
-import { getTextColor } from '../lib';
+import type { ColorMap, Pattern as PatternType } from '~/types';
+import { classNames, getTextColor } from '../lib';
 import { ColorContext } from './ColorContext';
 
-function countStitches(symbol, pattern) {
+function countStitches(symbol: string, pattern: string[][]): number {
   return pattern.reduce((acc, curr) => {
     return curr.reduce((accX, currX) => (currX === symbol ? accX + 1 : accX), acc);
   }, 0);
 }
 
-export default function Pattern({ className, pattern, style }) {
-  const colors = useContext(ColorContext);
+export type PatternProps = {
+  className?: string;
+  pattern: PatternType;
+  style?: React.CSSProperties;
+};
+
+export default function Pattern({ className, pattern, style }: PatternProps) {
+  const colors: ColorMap = useContext(ColorContext);
 
   return (
-    <div className={clsx('flex flex-col items-center justify-center', className)} style={style}>
+    <div
+      className={classNames('flex flex-col items-center justify-center', className)}
+      style={style}
+    >
       <div className="flex flex-1 flex-col mb-8 w-max">
         <div className="flex">
           {pattern.pattern[0].map((_, c) => (
@@ -44,7 +53,7 @@ export default function Pattern({ className, pattern, style }) {
             </div>
             {row.map((col, c) => (
               <div
-                className={clsx(
+                className={classNames(
                   'w-4 h-4 text-2xs items-center flex justify-center border-slate-400 dark:border-slate-600',
                   c > 0 && 'border-l',
                   c > 0 && c % 10 === 0 && 'border-l-2',

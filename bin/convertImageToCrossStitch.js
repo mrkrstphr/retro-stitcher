@@ -3,7 +3,7 @@ import { basename } from 'path';
 import { head } from 'ramda';
 import { hideBin } from 'yargs/helpers';
 import yargs from 'yargs/yargs';
-import { nearestColor } from '../src/lib.js';
+import { nearestColor, rgbToHex } from './lib/colors.js';
 
 const argv = yargs(hideBin(process.argv)).argv;
 
@@ -12,11 +12,6 @@ const inputFile = head(argv._);
 if (!inputFile) {
   console.log(`Usage: ${basename(process.argv[1])} image.png`);
   process.exit(1);
-}
-
-function rgbToHex(r, g, b) {
-  var hex = ((r << 16) | (g << 8) | b).toString(16);
-  return hex.padStart(6, '0');
 }
 
 function getTitle(filename) {
