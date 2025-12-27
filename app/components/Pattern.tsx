@@ -23,11 +23,22 @@ export default function Pattern({ className, pattern, style }: PatternProps) {
       className={classNames('flex flex-col items-center justify-center', className)}
       style={style}
     >
-      <h3 className="text-lg">{pattern.title}</h3>
-      <div className="text-sm mb-4 text-slate-600 dark:text-slate-400">
-        {pattern.pattern.length}x{pattern.pattern[0].length} stitches{' '}
-        <span className="text-slate-300 dark:text-slate-600">|</span>{' '}
-        {Object.keys(pattern.colorMap).length} colors
+      <div className="mb-4 text-center">
+        <h3 className="text-lg">{pattern.title}</h3>
+        <div className="text-sm text-slate-600 dark:text-slate-400">
+          {pattern.pattern.length}x{pattern.pattern[0].length} stitches{' '}
+          <span className="text-slate-300 dark:text-slate-600">|</span>{' '}
+          {Object.keys(pattern.colorMap).length} colors
+        </div>
+        {pattern.source && (
+          <div className="text-sm">
+            [
+            <a href={pattern.source} target="_blank" rel="noopener noreferrer">
+              Source
+            </a>
+            ]
+          </div>
+        )}
       </div>
       <div className="flex flex-1 flex-col mb-8 w-max">
         <div className="flex">
