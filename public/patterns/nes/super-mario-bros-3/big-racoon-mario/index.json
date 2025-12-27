@@ -1,0 +1,6 @@
+{
+  "title": "Big Racoon Mario",
+  "type": "spritesheet",
+  "maxPerRow": 1,
+  "patterns": ["big-racoon-mario.json"]
+}
