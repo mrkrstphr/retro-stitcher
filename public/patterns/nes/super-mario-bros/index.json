@@ -1,0 +1,5 @@
+{
+  "title": "Super Mario Bros",
+  "type": "category",
+  "items": [{ "title": "Mario, Small", "file": "mario-small/index.json" }]
+}

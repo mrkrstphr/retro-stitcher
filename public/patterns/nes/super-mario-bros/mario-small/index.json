@@ -1,0 +1,19 @@
+{
+  "title": "Mario, Small",
+  "type": "spritesheet",
+  "patterns": [
+    "mario.json",
+    "mario-walk-01.json",
+    "mario-walk-02.json",
+    "mario-walk-03.json",
+    "mario-jump.json",
+    "mario-stop.json",
+    "mario-climb-01.json",
+    "mario-climb-02.json",
+    "mario-swim-01.json",
+    "mario-swim-02.json",
+    "mario-swim-03.json",
+    "mario-swim-04.json",
+    "mario-die.json"
+  ]
+}
