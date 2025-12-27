@@ -1,0 +1,21 @@
+{
+  "title": "Mario/Luigi, Fire",
+  "type": "spritesheet",
+  "patterns": [
+    "stand.json",
+    "walk-01.json",
+    "walk-02.json",
+    "walk-03.json",
+    "stop.json",
+    "jump.json",
+    "crouch.json",
+    "climb-01.json",
+    "climb-02.json",
+    "swim-01.json",
+    "swim-02.json",
+    "swim-03.json",
+    "swim-04.json",
+    "swim-05.json",
+    "swim-06.json"
+  ]
+}
