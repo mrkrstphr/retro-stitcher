@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+import { BrowserTitle } from '../components/BrowserTitle';
 import RespImage from '../components/RespImage';
 import { useFetch } from '../hooks/useFetch';
 import type { Category } from '../types';
@@ -17,6 +18,7 @@ export default function HomePage() {
 
   return (
     <>
+      <BrowserTitle />
       <div className="mb-8">
         <div className="mb-8">
           <p>
