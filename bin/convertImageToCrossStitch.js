@@ -43,6 +43,13 @@ jimp.read(inputFile, function (err, image) {
       if (x === 0) chart.push(new Array(image.bitmap.width + 2).fill(''));
 
       const pixelColor = image.getPixelColor(x, y);
+
+      if (pixelColor === 0) {
+        // transparent pixel
+        chart[y + 1][x + 1] = '';
+        continue;
+      }
+
       const rgba = jimp.intToRGBA(pixelColor);
       const colorAsHex = rgbToHex(rgba.r, rgba.g, rgba.b);
 
