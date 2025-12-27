@@ -28,7 +28,9 @@ export default function GamePage({ params }: Route.ComponentProps) {
       <BrowserTitle title={data.title} />
       <div>
         <h2 className="text-2xl">{data.title}</h2>
-        <div className="text-slate-600 dark:text-slate-400 mb-4">System: {system.title}</div>
+        <div className="text-slate-600 dark:text-slate-400 mb-4">
+          System: <Link to={`/system/${params.system}`}>{system.title}</Link>
+        </div>
 
         <ul className="ml-8 list-decimal">
           {data.items.map((item) => (
