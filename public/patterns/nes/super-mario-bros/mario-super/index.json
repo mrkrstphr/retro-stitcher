@@ -1,0 +1,20 @@
+{
+  "title": "Mario, Super",
+  "type": "spritesheet",
+  "patterns": [
+    "super-mario-stand.json",
+    "super-mario-walk-01.json",
+    "super-mario-walk-02.json",
+    "super-mario-stop.json",
+    "super-mario-jump.json",
+    "super-mario-crouch.json",
+    "super-mario-climb-01.json",
+    "super-mario-climb-02.json",
+    "super-mario-swim-01.json",
+    "super-mario-swim-02.json",
+    "super-mario-swim-03.json",
+    "super-mario-swim-04.json",
+    "super-mario-swim-05.json",
+    "super-mario-swim-06.json"
+  ]
+}

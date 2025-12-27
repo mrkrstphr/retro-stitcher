@@ -1,5 +1,8 @@
 {
   "title": "Super Mario Bros",
   "type": "category",
-  "items": [{ "title": "Mario, Small", "file": "mario-small/index.json" }]
+  "items": [
+    { "title": "Mario, Small", "file": "mario-small/index.json" },
+    { "title": "Mario, Super", "file": "mario-super/index.json" }
+  ]
 }
