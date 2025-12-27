@@ -1,4 +1,4 @@
-import jimp from 'jimp';
+import { Jimp, intToRGBA } from 'jimp';
 import { basename } from 'path';
 import { head } from 'ramda';
 import { hideBin } from 'yargs/helpers';
@@ -24,53 +24,58 @@ function getTitle(filename) {
   return title.replace(new RegExp(argv.titleFind), argv.titleReplace);
 }
 
-const colors = {};
-const chart = [];
+function makeColorMap(colors) {
+  const map = {};
+
+  Object.values(colors).forEach((color) => {
+    map[color.symbol] = color.color.id;
+  });
+
+  return map;
+}
 
 let symbols = ['$', '=', '★', '+', '&', '#', '◉', '∅', '@', '►', '◢', '▣', '◼', '☻', '♡'];
 
-jimp.read(inputFile, function (err, image) {
-  if (err) {
-    console.error(err);
-    process.exit(-1);
-  }
+async function run(file) {
+  const colors = {};
+  const chart = [];
+
+  const image = await Jimp.read(file);
 
   // start the pattern with an empty row with an extra column at each end
   chart.push(new Array(image.bitmap.width + 2).fill(''));
 
-  for (let x = 0; x < image.bitmap.width; x++) {
-    for (let y = 0; y < image.bitmap.height; y++) {
-      if (x === 0) chart.push(new Array(image.bitmap.width + 2).fill(''));
+  image.scan((x, y) => {
+    if (x === 0) chart.push(new Array(image.bitmap.width + 2).fill(''));
 
-      const pixelColor = image.getPixelColor(x, y);
+    const pixelColor = image.getPixelColor(x, y);
 
-      if (pixelColor === 0) {
-        // transparent pixel
-        chart[y + 1][x + 1] = '';
-        continue;
-      }
-
-      const rgba = jimp.intToRGBA(pixelColor);
-      const colorAsHex = rgbToHex(rgba.r, rgba.g, rgba.b);
-
-      if (!(colorAsHex in colors)) {
-        const dmcColor = nearestColor(colorAsHex);
-
-        if (!dmcColor) {
-          console.error(`Failed to find a DMC match for: ${colorAsHex}; exiting...`);
-          process.exit(-1);
-        }
-
-        colors[colorAsHex] = { color: dmcColor, symbol: symbols.splice(0, 1)[0] };
-      }
-
-      if (rgba.a === 0) {
-        chart[y + 1][x + 1] = '';
-      } else {
-        chart[y + 1][x + 1] = colors[colorAsHex].symbol;
-      }
+    if (pixelColor === 0) {
+      // transparent pixel
+      chart[y + 1][x + 1] = '';
+      return;
     }
-  }
+
+    const rgba = intToRGBA(pixelColor);
+    const colorAsHex = rgbToHex(rgba.r, rgba.g, rgba.b);
+
+    if (!(colorAsHex in colors)) {
+      const dmcColor = nearestColor(colorAsHex);
+
+      if (!dmcColor) {
+        console.error(`Failed to find a DMC match for: ${colorAsHex}; exiting...`);
+        process.exit(-1);
+      }
+
+      colors[colorAsHex] = { color: dmcColor, symbol: symbols.splice(0, 1)[0] };
+    }
+
+    if (rgba.a === 0) {
+      chart[y + 1][x + 1] = '';
+    } else {
+      chart[y + 1][x + 1] = colors[colorAsHex].symbol;
+    }
+  });
 
   // end the pattern with an empty row with an extra column at each end
   chart.push(new Array(image.bitmap.width + 2).fill(''));
@@ -86,14 +91,9 @@ jimp.read(inputFile, function (err, image) {
   }
 
   console.log(JSON.stringify(pattern));
-});
-
-function makeColorMap(colors) {
-  const map = {};
-
-  Object.values(colors).forEach((color) => {
-    map[color.symbol] = color.color.id;
-  });
-
-  return map;
 }
+
+run(inputFile).catch((e) => {
+  console.error('Error processing image:', e);
+  process.exit(-1);
+});

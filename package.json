@@ -23,7 +23,7 @@
     "@types/ramda": "^0.31.1",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
-    "jimp": "^0.22.7",
+    "jimp": "^1.6.0",
     "papaparse": "^5.4.0",
     "ramda": "^0.32.0",
     "tailwindcss": "^4.1.18",
