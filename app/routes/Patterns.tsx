@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { BrowserTitle } from '~/components/BrowserTitle';
 import ColorDisclaimer from '../components/ColorDisclaimer';
 import PatternLoader from '../components/PatternLoader';
@@ -35,7 +36,9 @@ export default function GamePage({ params }: Route.ComponentProps) {
       <BrowserTitle title={`${data.title} | ${game.title}`} />
       <div>
         <h2 className="text-2xl">{data.title}</h2>
-        <div className="text-slate-600 dark:text-slate-400 mb-2">Game: {game.title}</div>
+        <div className="text-slate-600 dark:text-slate-400 mb-2">
+          Game: <Link to={`/system/${params.system}/${params.game}`}>{game.title}</Link>
+        </div>
 
         <div className={classes}>
           {data.patterns.map((pattern, index) => (
