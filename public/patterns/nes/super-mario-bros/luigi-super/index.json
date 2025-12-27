@@ -1,0 +1,21 @@
+{
+  "title": "Luigi, Super",
+  "type": "spritesheet",
+  "patterns": [
+    "super-luigi-stand.json",
+    "super-luigi-walk-01.json",
+    "super-luigi-walk-02.json",
+    "super-luigi-walk-03.json",
+    "super-luigi-stop.json",
+    "super-luigi-jump.json",
+    "super-luigi-crouch.json",
+    "super-luigi-climb-01.json",
+    "super-luigi-climb-02.json",
+    "super-luigi-swim-01.json",
+    "super-luigi-swim-02.json",
+    "super-luigi-swim-03.json",
+    "super-luigi-swim-04.json",
+    "super-luigi-swim-05.json",
+    "super-luigi-swim-06.json"
+  ]
+}
