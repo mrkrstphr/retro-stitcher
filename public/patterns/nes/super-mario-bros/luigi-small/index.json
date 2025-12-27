@@ -1,0 +1,19 @@
+{
+  "title": "Luigi, Small",
+  "type": "spritesheet",
+  "patterns": [
+    "luigi.json",
+    "luigi-walk-01.json",
+    "luigi-walk-02.json",
+    "luigi-walk-03.json",
+    "luigi-jump.json",
+    "luigi-stop.json",
+    "luigi-climb-01.json",
+    "luigi-climb-02.json",
+    "luigi-swim-01.json",
+    "luigi-swim-02.json",
+    "luigi-swim-03.json",
+    "luigi-swim-04.json",
+    "luigi-die.json"
+  ]
+}
