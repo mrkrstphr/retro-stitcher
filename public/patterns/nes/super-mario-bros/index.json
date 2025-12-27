@@ -2,10 +2,30 @@
   "title": "Super Mario Bros",
   "type": "category",
   "items": [
-    { "title": "Luigi, Small", "file": "luigi-small/index.json" },
-    { "title": "Luigi, Super", "file": "luigi-super/index.json" },
-    { "title": "Mario/Luigi, Fire", "file": "mario-luigi-fire/index.json" },
-    { "title": "Mario, Small", "file": "mario-small/index.json" },
-    { "title": "Mario, Super", "file": "mario-super/index.json" }
+    {
+      "title": "Luigi, Small",
+      "file": "luigi-small/index.json",
+      "render": "renders/nes/super-mario-bros/luigi-small.png"
+    },
+    {
+      "title": "Luigi, Super",
+      "file": "luigi-super/index.json",
+      "render": "renders/nes/super-mario-bros/luigi-super.png"
+    },
+    {
+      "title": "Mario/Luigi, Fire",
+      "file": "mario-luigi-fire/index.json",
+      "render": "renders/nes/super-mario-bros/mario-luigi-fire.png"
+    },
+    {
+      "title": "Mario, Small",
+      "file": "mario-small/index.json",
+      "render": "renders/nes/super-mario-bros/mario-small.png"
+    },
+    {
+      "title": "Mario, Super",
+      "file": "mario-super/index.json",
+      "render": "renders/nes/super-mario-bros/mario-super.png"
+    }
   ]
 }

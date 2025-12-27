@@ -1,5 +1,11 @@
 {
   "title": "Super Mario Land 2: 6 Golden Coins",
   "type": "category",
-  "items": [{ "title": "Space Mario", "file": "space-mario/index.json" }]
+  "items": [
+    {
+      "title": "Space Mario",
+      "file": "space-mario/index.json",
+      "render": "renders/gb/super-mario-land-2/space-mario.png"
+    }
+  ]
 }

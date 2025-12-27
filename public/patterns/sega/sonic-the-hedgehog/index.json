@@ -1,5 +1,11 @@
 {
   "title": "Sonic the Hedgehog",
   "type": "category",
-  "items": [{ "title": "Sonic Idle", "file": "sonic-idle/index.json" }]
+  "items": [
+    {
+      "title": "Sonic Idle",
+      "file": "sonic-idle/index.json",
+      "render": "renders/sega/sonic-the-hedgehog/sonic-idle.png"
+    }
+  ]
 }

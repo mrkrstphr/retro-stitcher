@@ -15,6 +15,7 @@ export type Category = {
   title: string;
   items: Array<{
     title: string;
+    render?: string;
     file: string;
   }>;
 };

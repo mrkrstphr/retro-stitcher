@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
 import { BrowserTitle } from '~/components/BrowserTitle';
+import { BASE_PATH } from '~/config';
 import { useFetch } from '~/hooks/useFetch';
 import type { Category } from '~/types';
 import type { Route } from './+types/Game';
@@ -32,17 +33,32 @@ export default function GamePage({ params }: Route.ComponentProps) {
           System: <Link to={`/system/${params.system}`}>{system.title}</Link>
         </div>
 
-        <ul className="ml-8 list-decimal">
+        <div className="flex flex-wrap items-center gap-4">
           {data.items.map((item) => (
-            <li key={`item-${item.title}`}>
-              <Link
-                to={`/system/${params.system}/${params.game}/${item.file.substr(0, item.file.indexOf('/'))}`}
+            <Link
+              to={`/system/${params.system}/${params.game}/${item.file.substr(0, item.file.indexOf('/'))}`}
+            >
+              <div
+                key={`item-${item.title}`}
+                className="bg-slate-200 dark:bg-slate-800 rounded w-48 p-2"
               >
-                {item.title}
-              </Link>
-            </li>
+                {item.render ? (
+                  <img
+                    src={`${BASE_PATH}/${item.render}`}
+                    alt={item.title}
+                    className="inline-block size-48 object-contain rounded-tl rounded-tr"
+                  />
+                ) : (
+                  item.title
+                )}
+                <div className="">
+                  <h4>{item.title}</h4>
+                  {/* <p className="text-sm mt-1 text-slate-700 dark:text-slate-400">X patterns</p> */}
+                </div>
+              </div>
+            </Link>
           ))}
-        </ul>
+        </div>
       </div>
     </>
   );

@@ -2,15 +2,55 @@
   "title": "Super Mario Bros. 3",
   "type": "category",
   "items": [
-    { "title": "Big Racoon Mario", "file": "big-racoon-mario/index.json" },
-    { "title": "Frog Mario/Luigi", "file": "frog-mario/index.json" },
-    { "title": "Goombas", "file": "goombas/index.json" },
-    { "title": "Koopa Troopas", "file": "koopa-troopas/index.json" },
-    { "title": "Luigi, Racoon", "file": "luigi-racoon/index.json" },
-    { "title": "Luigi, Small", "file": "luigi-small/index.json" },
-    { "title": "Luigi, Super", "file": "luigi-super/index.json" },
-    { "title": "Mario, Racoon", "file": "mario-racoon/index.json" },
-    { "title": "Mario, Small", "file": "mario-small/index.json" },
-    { "title": "Mario, Super", "file": "mario-super/index.json" }
+    {
+      "title": "Big Racoon Mario",
+      "file": "big-racoon-mario/index.json",
+      "render": "renders/nes/super-mario-bros-3/big-racoon-mario.png"
+    },
+    {
+      "title": "Frog Mario/Luigi",
+      "file": "frog-mario/index.json",
+      "render": "renders/nes/super-mario-bros-3/mario-luigi-frog.png"
+    },
+    {
+      "title": "Goombas",
+      "file": "goombas/index.json",
+      "render": "renders/nes/super-mario-bros-3/goomba.png"
+    },
+    {
+      "title": "Koopa Troopas",
+      "file": "koopa-troopas/index.json",
+      "render": "renders/nes/super-mario-bros-3/koopa-troopa.png"
+    },
+    {
+      "title": "Luigi, Racoon",
+      "file": "luigi-racoon/index.json",
+      "render": "renders/nes/super-mario-bros-3/luigi-racoon.png"
+    },
+    {
+      "title": "Luigi, Small",
+      "file": "luigi-small/index.json",
+      "render": "renders/nes/super-mario-bros-3/luigi-small.png"
+    },
+    {
+      "title": "Luigi, Super",
+      "file": "luigi-super/index.json",
+      "render": "renders/nes/super-mario-bros-3/luigi-super.png"
+    },
+    {
+      "title": "Mario, Racoon",
+      "file": "mario-racoon/index.json",
+      "render": "renders/nes/super-mario-bros-3/mario-racoon.png"
+    },
+    {
+      "title": "Mario, Small",
+      "file": "mario-small/index.json",
+      "render": "renders/nes/super-mario-bros-3/mario-small.png"
+    },
+    {
+      "title": "Mario, Super",
+      "file": "mario-super/index.json",
+      "render": "renders/nes/super-mario-bros-3/mario-super.png"
+    }
   ]
 }
