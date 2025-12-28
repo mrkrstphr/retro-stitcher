@@ -1,0 +1,4 @@
+{
+  "title": "Bulbasaur",
+  "patterns": ["stand.json", "jump.json"]
+}

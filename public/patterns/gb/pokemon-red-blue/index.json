@@ -1,0 +1,10 @@
+{
+  "title": "Pokémon Red/Pokémon Blue",
+  "items": [
+    {
+      "title": "Bulbasaur",
+      "file": "bulbasaur/index.json",
+      "render": "renders/gb/pokemon-red-blue/bulbasaur.svg"
+    }
+  ]
+}
