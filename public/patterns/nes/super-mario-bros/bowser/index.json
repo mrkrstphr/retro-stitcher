@@ -1,0 +1,5 @@
+{
+  "title": "Bowser",
+  "maxPerRow": 2,
+  "patterns": ["bowser-01.json", "bowser-02.json", "bowser-03.json"]
+}

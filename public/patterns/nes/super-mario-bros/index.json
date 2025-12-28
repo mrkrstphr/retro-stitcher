@@ -26,6 +26,11 @@
       "title": "Mario, Super",
       "file": "mario-super/index.json",
       "render": "renders/nes/super-mario-bros/mario-super.png"
+    },
+    {
+      "title": "Bowser",
+      "file": "bowser/index.json",
+      "render": "renders/nes/super-mario-bros/bowser.svg"
     }
   ]
 }
