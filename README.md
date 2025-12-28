@@ -68,3 +68,15 @@ Generates an svg of what the pattern might look like, with each stitch being 4x4
 ```
 node bin/patternToThumbnail.js pattern.json --output image.svg
 ```
+
+#### `bin/resymbol.js`
+
+Takes the colorMap from one pattern and applies it to another with the same colors in an effort to use the same symbols in similar patterns.
+
+Take the `colorMap` from one pattern, save it as a JSON file, and then:
+
+```
+bin/resymbol.js colors.json pattern.json
+```
+
+Will save it to the same pattern, otherwise specify `--output pattern2.json` to save elsewhere.
