@@ -40,7 +40,7 @@
     {
       "title": "Mario, Racoon",
       "file": "mario-racoon/index.json",
-      "render": "renders/nes/super-mario-bros-3/mario-racoon.png"
+      "render": "renders/nes/super-mario-bros-3/mario-racoon.svg"
     },
     {
       "title": "Mario, Small",
