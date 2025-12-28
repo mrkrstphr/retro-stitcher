@@ -5,27 +5,27 @@
     {
       "title": "Luigi, Small",
       "file": "luigi-small/index.json",
-      "render": "renders/nes/super-mario-bros/luigi-small.png"
+      "render": "renders/nes/super-mario-bros/luigi-small.svg"
     },
     {
       "title": "Luigi, Super",
       "file": "luigi-super/index.json",
-      "render": "renders/nes/super-mario-bros/luigi-super.png"
+      "render": "renders/nes/super-mario-bros/luigi-super.svg"
     },
     {
       "title": "Mario/Luigi, Fire",
       "file": "mario-luigi-fire/index.json",
-      "render": "renders/nes/super-mario-bros/mario-luigi-fire.png"
+      "render": "renders/nes/super-mario-bros/mario-luigi-fire.svg"
     },
     {
       "title": "Mario, Small",
       "file": "mario-small/index.json",
-      "render": "renders/nes/super-mario-bros/mario-small.png"
+      "render": "renders/nes/super-mario-bros/mario-small.svg"
     },
     {
       "title": "Mario, Super",
       "file": "mario-super/index.json",
-      "render": "renders/nes/super-mario-bros/mario-super.png"
+      "render": "renders/nes/super-mario-bros/mario-super.svg"
     },
     {
       "title": "Bowser",
