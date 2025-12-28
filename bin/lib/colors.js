@@ -46,3 +46,21 @@ export function nearestColor(colorHex) {
   });
   return colorsAsArray[index];
 }
+
+export function hexToJimpColor(hex) {
+  if (typeof hex === 'number') {
+    return (hex << 8) | 0xff;
+  }
+
+  if (typeof hex !== 'string') {
+    console.warn(`Invalid hex color type: ${typeof hex}`, hex);
+    return 0x00000000;
+  }
+
+  const cleaned = hex.replace('#', '');
+  const r = parseInt(cleaned.substring(0, 2), 16);
+  const g = parseInt(cleaned.substring(2, 4), 16);
+  const b = parseInt(cleaned.substring(4, 6), 16);
+
+  return ((r << 24) | (g << 16) | (b << 8) | 0xff) >>> 0;
+}
