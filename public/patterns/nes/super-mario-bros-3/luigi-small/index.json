@@ -1,6 +1,5 @@
 {
   "title": "Luigi, Small",
-  "type": "spritesheet",
   "patterns": [
     "luigi-small-01.json",
     "luigi-small-02.json",

@@ -22,7 +22,6 @@ export type Category = {
 
 export type Sheet = {
   title: string;
-  maxPerRow?: number;
   patterns: string[];
 };
 
@@ -30,5 +29,4 @@ export type Pattern = {
   title: string;
   colorMap: Record<string, string>;
   pattern: Array<Array<string>>;
-  source?: string;
 };

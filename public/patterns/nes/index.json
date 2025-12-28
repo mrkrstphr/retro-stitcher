@@ -1,6 +1,5 @@
 {
   "title": "Nintendo Entertainment System (NES)",
-  "type": "category",
   "items": [
     { "title": "Super Mario Bros.", "file": "super-mario-bros/index.json" },
     { "title": "Super Mario Bros. 3", "file": "super-mario-bros-3/index.json" }

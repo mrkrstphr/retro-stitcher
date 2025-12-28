@@ -1,7 +1,6 @@
 {
   "title": "Frog Mario/Luigi",
   "description": "The frog suit from Super Mario Bros. 3 on NES is a power-up that allows Mario or Luigi to swim faster and jump higher. The same sprites were used for both characters.",
-  "type": "spritesheet",
   "patterns": [
     "stand.json",
     "hop-01.json",

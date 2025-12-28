@@ -24,13 +24,6 @@ export default function GamePage({ params }: Route.ComponentProps) {
     return <div>Error loading data</div>;
   }
 
-  const maxPerRow = data.maxPerRow ?? 3;
-
-  const classes =
-    maxPerRow === 2
-      ? 'grid grid-cols-1 lg:grid-cols-2 gap-4'
-      : 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4';
-
   return (
     <>
       <BrowserTitle title={`${data.title} | ${game.title}`} />
@@ -40,7 +33,7 @@ export default function GamePage({ params }: Route.ComponentProps) {
           Game: <Link to={`/system/${params.system}/${params.game}`}>{game.title}</Link>
         </div>
 
-        <div className={classes}>
+        <div className="flex flex-wrap gap-4 justify-center">
           {data.patterns.map((pattern, index) => (
             <PatternLoader
               className={`mr-2 mt-2 h-full`}

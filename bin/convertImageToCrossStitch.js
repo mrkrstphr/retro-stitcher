@@ -24,7 +24,7 @@ if (argv.colorMap) {
   }
 }
 
-processImage(inputFile, colorMap, argv.title, argv.source)
+processImage(inputFile, colorMap, argv.title)
   .then((pattern) => {
     console.log(JSON.stringify(omit(['rawColors'], pattern)));
   })

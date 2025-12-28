@@ -36,15 +36,6 @@ export default function Pattern({ className, pattern, style }: PatternProps) {
           <span className="text-slate-300 dark:text-slate-600">|</span>{' '}
           {Object.keys(pattern.colorMap).length} colors
         </div>
-        {pattern.source && (
-          <div className="text-sm">
-            [
-            <a href={pattern.source} target="_blank" rel="noopener noreferrer">
-              Source
-            </a>
-            ]
-          </div>
-        )}
       </div>
       <div className="flex flex-1 flex-col mb-8 w-max">
         <div className="flex">

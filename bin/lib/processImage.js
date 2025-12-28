@@ -18,7 +18,7 @@ function makeColorMap(colors) {
 
 let symbols = ['$', '=', '★', '+', '&', '#', '◉', '∅', '@', '►', '◢', '▣', '◼', '☻', '♡'];
 
-export async function processImage(file, defaultColors, title, source) {
+export async function processImage(file, defaultColors, title) {
   const colors = defaultColors ?? {};
   const chart = [];
 
@@ -64,7 +64,6 @@ export async function processImage(file, defaultColors, title, source) {
 
   const pattern = {
     title: title ?? getTitle(file),
-    source: source ?? '',
     colorMap: makeColorMap(colors),
     pattern: chart,
     rawColors: colors,

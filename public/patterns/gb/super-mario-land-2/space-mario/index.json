@@ -1,16 +1,15 @@
 {
   "title": "Space Mario, Run #1",
-  "type": "spritesheet",
   "patterns": [
-    "space-mario-stand.json",
-    "space-mario-run-01.json",
-    "space-mario-run-02.json",
-    "space-mario-run-03.json",
-    "space-mario-jump-01.json",
-    "space-mario-jump-02.json",
-    "space-mario-front.json",
-    "space-mario-back.json",
-    "space-mario-swim-01.json",
-    "space-mario-swim-02.json"
+    "stand.json",
+    "run-01.json",
+    "run-02.json",
+    "run-03.json",
+    "jump-01.json",
+    "jump-02.json",
+    "front.json",
+    "back.json",
+    "swim-01.json",
+    "swim-02.json"
   ]
 }

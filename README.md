@@ -24,11 +24,10 @@ node bin/convertImageToCrossStitch.js \
     > public/patterns/xyz/pixel-guy/pixel-guy-run-01.json
 ```
 
-Include a title and source:
+Include a title:
 
 ```
 node bin/convertImageToCrossStitch.js \
-    --source "https://www.spriters-resource.com/xyz" \
     --title "Pixel Guy, Run" \
     --symbolMap pixel-guy-symbols.json \
     raw/pixel-guy.png \

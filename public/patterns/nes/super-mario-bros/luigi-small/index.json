@@ -1,6 +1,5 @@
 {
   "title": "Luigi, Small",
-  "type": "spritesheet",
   "patterns": [
     "luigi.json",
     "luigi-walk-01.json",

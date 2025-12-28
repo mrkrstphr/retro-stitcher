@@ -1,6 +1,5 @@
 {
   "title": "Mario/Luigi, Fire",
-  "type": "spritesheet",
   "patterns": [
     "stand.json",
     "walk-01.json",

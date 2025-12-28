@@ -1,6 +1,5 @@
 {
   "title": "Racoon Mario",
-  "type": "spritesheet",
   "patterns": [
     "stand.json",
     "walk-01.json",

@@ -1,6 +1,5 @@
 {
   "title": "Luigi, Super",
-  "type": "spritesheet",
   "patterns": [
     "super-luigi-stand.json",
     "super-luigi-walk-01.json",

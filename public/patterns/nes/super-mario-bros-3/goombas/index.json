@@ -1,6 +1,5 @@
 {
   "title": "Goombas",
-  "type": "spritesheet",
   "patterns": [
     "goomba-01.json",
     "goomba-02.json",

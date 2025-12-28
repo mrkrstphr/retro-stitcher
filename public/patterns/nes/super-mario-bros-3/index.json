@@ -1,31 +1,30 @@
 {
   "title": "Super Mario Bros. 3",
-  "type": "category",
   "items": [
     {
       "title": "Big Racoon Mario",
       "file": "big-racoon-mario/index.json",
-      "render": "renders/nes/super-mario-bros-3/big-racoon-mario.png"
+      "render": "renders/nes/super-mario-bros-3/big-racoon-mario.svg"
     },
     {
       "title": "Frog Mario/Luigi",
       "file": "frog-mario/index.json",
-      "render": "renders/nes/super-mario-bros-3/mario-luigi-frog.png"
+      "render": "renders/nes/super-mario-bros-3/mario-luigi-frog.svg"
     },
     {
       "title": "Goombas",
       "file": "goombas/index.json",
-      "render": "renders/nes/super-mario-bros-3/goomba.png"
+      "render": "renders/nes/super-mario-bros-3/goomba.svg"
     },
     {
       "title": "Koopa Troopas",
       "file": "koopa-troopas/index.json",
-      "render": "renders/nes/super-mario-bros-3/koopa-troopa.png"
+      "render": "renders/nes/super-mario-bros-3/koopa-troopa.svg"
     },
     {
       "title": "Luigi, Racoon",
       "file": "luigi-racoon/index.json",
-      "render": "renders/nes/super-mario-bros-3/luigi-racoon.png"
+      "render": "renders/nes/super-mario-bros-3/luigi-racoon.svg"
     },
     {
       "title": "Luigi, Small",

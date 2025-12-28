@@ -1,6 +1,5 @@
 {
   "title": "Mario, Small",
-  "type": "spritesheet",
   "patterns": [
     "mario-small-01.json",
     "mario-small-02.json",

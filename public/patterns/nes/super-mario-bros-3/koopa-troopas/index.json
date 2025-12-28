@@ -1,6 +1,5 @@
 {
   "title": "Koopa Troopas",
-  "type": "spritesheet",
   "patterns": [
     "koopa-shell-green.json",
     "koopa-shell-move-green-01.json",
