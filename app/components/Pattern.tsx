@@ -9,6 +9,10 @@ function countStitches(symbol: string, pattern: string[][]): number {
   }, 0);
 }
 
+function countTotalStitches(pattern: string[][]): number {
+  return pattern.reduce((acc, curr) => acc + curr.filter((v) => v !== '').length, 0);
+}
+
 export type PatternProps = {
   className?: string;
   pattern: PatternType;
@@ -26,7 +30,9 @@ export default function Pattern({ className, pattern, style }: PatternProps) {
       <div className="mb-4 text-center">
         <h3 className="text-lg">{pattern.title}</h3>
         <div className="text-sm text-slate-600 dark:text-slate-400">
-          {pattern.pattern.length}x{pattern.pattern[0].length} stitches{' '}
+          {pattern.pattern.length}x{pattern.pattern[0].length}{' '}
+          <span className="text-slate-300 dark:text-slate-600">|</span>{' '}
+          {countTotalStitches(pattern.pattern)} stitches{' '}
           <span className="text-slate-300 dark:text-slate-600">|</span>{' '}
           {Object.keys(pattern.colorMap).length} colors
         </div>
