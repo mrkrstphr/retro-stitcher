@@ -1,0 +1,11 @@
+{
+  "title": "Squirtle",
+  "patterns": [
+    "squirtle-stand.json",
+    "squirtle-jump.json",
+    "wartortle-stand.json",
+    "wartortle-fight.json",
+    "blastoise-stand.json",
+    "blastoise-fight.json"
+  ]
+}

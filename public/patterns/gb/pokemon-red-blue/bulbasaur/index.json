@@ -1,4 +1,11 @@
 {
   "title": "Bulbasaur",
-  "patterns": ["stand.json", "jump.json"]
+  "patterns": [
+    "bulbasaur-stand.json",
+    "bulbasaur-jump.json",
+    "ivysaur-stand.json",
+    "ivysaur-jump.json",
+    "venusaur-stand.json",
+    "venusaur-jump.json"
+  ]
 }

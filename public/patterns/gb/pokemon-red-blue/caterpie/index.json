@@ -1,0 +1,11 @@
+{
+  "title": "Caterpie",
+  "patterns": [
+    "caterpie-stand.json",
+    "caterpie-jump.json",
+    "metapod-stand.json",
+    "metapod-jump.json",
+    "butterfree-fly.json",
+    "butterfree-attack.json"
+  ]
+}

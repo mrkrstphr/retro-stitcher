@@ -4,7 +4,26 @@
     {
       "title": "Bulbasaur",
       "file": "bulbasaur/index.json",
+      "count": 6,
       "render": "renders/gb/pokemon-red-blue/bulbasaur.svg"
+    },
+    {
+      "title": "Charmander",
+      "file": "charmander/index.json",
+      "count": 6,
+      "render": "renders/gb/pokemon-red-blue/charmander.svg"
+    },
+    {
+      "title": "Squirtle",
+      "file": "squirtle/index.json",
+      "count": 6,
+      "render": "renders/gb/pokemon-red-blue/squirtle.svg"
+    },
+    {
+      "title": "Caterpie",
+      "file": "caterpie/index.json",
+      "count": 6,
+      "render": "renders/gb/pokemon-red-blue/caterpie.svg"
     }
   ]
 }

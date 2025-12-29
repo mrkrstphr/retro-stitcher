@@ -1,0 +1,11 @@
+{
+  "title": "Charmander",
+  "patterns": [
+    "charmander-stand.json",
+    "charmander-jump.json",
+    "charmeleon-stand.json",
+    "charmeleon-fight.json",
+    "charizard-stand.json",
+    "charizard-fight.json"
+  ]
+}
