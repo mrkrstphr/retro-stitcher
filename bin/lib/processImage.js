@@ -22,6 +22,12 @@ export async function processImage(file, defaultColors, title) {
   const colors = defaultColors ?? {};
   const chart = [];
 
+  if (defaultColors) {
+    // remove any used symbols from the available pool
+    const usedSymbols = Object.values(defaultColors).map((c) => c.symbol);
+    symbols = symbols.filter((s) => !usedSymbols.includes(s));
+  }
+
   const image = await Jimp.read(file);
 
   // start the pattern with an empty row with an extra column at each end
@@ -40,8 +46,9 @@ export async function processImage(file, defaultColors, title) {
 
     const rgba = intToRGBA(pixelColor);
     const colorAsHex = rgbToHex(rgba.r, rgba.g, rgba.b);
-
+    // console.log(colorAsHex);
     if (!(colorAsHex in colors)) {
+      console.log('Found a baddie:', colorAsHex);
       const dmcColor = nearestColor(colorAsHex);
 
       if (!dmcColor) {
